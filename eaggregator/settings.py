@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'rest_framework',
-    'electronicbeats.apps.ElectornicbeatsConfig',
+    'mixmag.apps.MixmagConfig',
     'residentadvisor.apps.ResidentadvisorConfig',
     'factmag.apps.FactmagConfig',
     'django.contrib.admin',
