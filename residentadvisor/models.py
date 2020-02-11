@@ -7,6 +7,6 @@ class ResidentAdvisor_model(models.Model):
     description = models.CharField(max_length=300)
     date = models.DateTimeField(default=timezone.now())
     tags = models.CharField(max_length = 100)
-    is_featured = models.BooleanField()
+    featured = models.BooleanField()
 
     
