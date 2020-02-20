@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Vinyl</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-48.7%" y="-48.7%" width="197.4%" height="197.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.267100087 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="News-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1080p" transform="translate(-58.000000, -29.000000)" stroke="#FFFFFF" stroke-width="1.4">
+            <g id="Vinyl" filter="url(#filter-1)" transform="translate(65.000000, 33.000000)">
+                <circle id="Oval" fill="#000000" cx="19" cy="19" r="19"></circle>
+                <path d="M21,8 C20.1883744,7.34580549 19.3427663,7 18.4739345,7 C17.6236879,7 16.7956821,7.33116947 16,7.95844206" id="Shape"></path>
+                <path d="M21.9336409,3.89104958 C19.6463296,2.77462581 17.5225078,2.77115883 15.2577414,3.89104958 C14.2803813,4.37433848 16.2384019,3.09879586 18.5123336,3.00370494 C20.3836499,2.92545053 22.3929266,4.11522434 21.9336409,3.89104958 Z" id="Oval" fill="#BCA1A1"></path>
+                <path d="M21,9.62358486 C20.3610743,9.21558297 19.6956569,9 19.0120952,9 C18.3199021,9 17.6463146,9.22106165 17,9.63913232" id="Shape"></path>
+                <path d="M21,32 C20.1883744,31.3458055 19.3427663,31 18.4739345,31 C17.6236879,31 16.7956821,31.3311695 16,31.9584421" id="Shape-Copy-2" transform="translate(18.500000, 31.500000) rotate(180.000000) translate(-18.500000, -31.500000) "></path>
+                <path d="M21.9336409,34.8910496 C19.6463296,33.7746258 17.5225078,33.7711588 15.2577414,34.8910496 C14.2803813,35.3743385 16.2384019,34.0987959 18.5123336,34.0037049 C20.3836499,33.9254505 22.3929266,35.1152243 21.9336409,34.8910496 Z" id="Oval-Copy" fill="#BCA1A1" transform="translate(18.500000, 34.500000) rotate(180.000000) translate(-18.500000, -34.500000) "></path>
+                <path d="M21,28.6235849 C20.3610743,28.215583 19.6956569,28 19.0120952,28 C18.3199021,28 17.6463146,28.2210617 17,28.6391323" id="Shape-Copy" transform="translate(19.000000, 28.500000) rotate(180.000000) translate(-19.000000, -28.500000) "></path>
+                <circle id="Oval-Copy-3" fill="#310101" cx="19" cy="19" r="4.3"></circle>
+                <circle id="Oval-Copy-2" fill="#ACA5A5" cx="18.5" cy="18.5" r="5.8"></circle>
+                <circle id="Oval-Copy-5" fill="#FFFFFF" cx="18.5" cy="18.5" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

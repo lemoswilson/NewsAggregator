@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 
 
 INSTALLED_APPS = [
+    'news.apps.NewsConfig',
     'factmag.apps.FactmagConfig',
     'residentadvisor.apps.ResidentadvisorConfig',
     'pitchfork.apps.PitchforkConfig',
@@ -124,7 +125,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'http://127.0.0.1:8080/'
 
 # Celery
 BROKER_URL = 'redis://localhost:6379'
@@ -137,3 +138,7 @@ REST_FRAMEWORK = {
     #     'rest_framework.permissions.IsAdminUser',
     # )
 }
+
+STATICFILES_DIRS = ['dist']
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
