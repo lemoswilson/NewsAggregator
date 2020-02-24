@@ -250,7 +250,7 @@ ul.mags > li {
     display: none;
 }
 
-@media screen and (orientation:portrait) {
+@media screen and (max-width: 560px) {
     .menu {
         justify-content: center;
         display: flex;
@@ -364,5 +364,122 @@ ul.mags > li {
 
     .block {
         display: block;
+    }
+}
+
+ @media  screen 
+  and (max-width: 1000px) 
+  and (min-width: 560px)
+  {
+
+    body {
+        background-image: linear-gradient(306deg, #FFE8E8 49%, rgba(0,0,0,0.81) 49%);
+        /* background-repeat: space; */
+        background-attachment: fixed;
+        z-index: -1;
+        position: relative;
+    }
+
+    .content-holder {
+        display: grid;
+        margin-top: 10vh;
+        grid-template-columns: 50% 50%;
+    }
+
+    .magazine,
+    .page,
+    .name {
+        width: 30vw;
+    }
+
+    .page {
+        height: 30vh;
+    }
+
+    .name {
+        height: 3vh;
+    }
+
+    .magazine {
+        margin-bottom: 5vh;
+    }
+
+    h1.title {
+        font-size: 2vw;
+    }
+
+    h2 {
+        font-size: 1.5vw;
+    }
+
+    .description > p {
+        font-size: 1.3vw;
+    }
+
+    .meta {
+        font-size: 1.1vw;
+    }
+
+    .category-tech {
+        color: white;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    body {
+        background-image: linear-gradient(306deg, #FFE8E8 49%, rgba(0,0,0,0.81) 49%);
+        /* background-repeat: space; */
+        background-attachment: fixed;
+        z-index: -1;
+        position: relative;
+    }
+
+    .content-holder {
+        display: grid;
+        margin-top: 10vh;
+        grid-template-columns: 50% 50%;
+    }
+
+    .magazine,
+    .page,
+    .name {
+        width: 30vw;
+    }
+
+    .page {
+        height: 30vh;
+    }
+
+    .name {
+        height: 3vh;
+    }
+
+    .magazine {
+        margin-bottom: 5vh;
+    }
+
+    h1.title {
+        font-size: 2vw;
+    }
+
+    h2 {
+        font-size: 1.5vw;
+    }
+
+    .description > p {
+        font-size: 1.3vw;
+    }
+
+    .meta {
+        font-size: 1.1vw;
+    }
+
+    .category-tech {
+        color: white;
     }
 }

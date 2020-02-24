@@ -4,14 +4,8 @@
     box-sizing: border-box;
 }
 
-.simplebar-scrollbar:before {
-    background-color: rgba(224, 178, 178, 0.781);
-    height: 47px;
-    box-shadow: 0 3px 6px 0 rgba(216,211,211,0.50);
-}
-
 body {
-    background-image: linear-gradient(128deg, #FFE8E8 49%, rgba(0,0,0,0.81) 49%);
+    background-image: linear-gradient(304deg, #FFE8E8 49%, rgba(0,0,0,0.81) 49%);
     /* background-repeat: space; */
     background-attachment: fixed;
     z-index: -1;
@@ -19,13 +13,13 @@ body {
 }
 
 header {
-    width: 100vw;
-    height: 50px;
+    height: 7vh;
 }
 
 nav {
     /* width: 100vw; */
     display: grid;
+    width: 100%;
     grid-template-columns: 62% 38%;
 }
 
@@ -33,7 +27,7 @@ nav {
     display: flex;
     flex-direction: row;
     position: relative;
-    top: 5px;
+    justify-content: center;
 }
 
 .catnews, 
@@ -43,11 +37,11 @@ nav {
     align-items: center;
 }
 
-.category-news {
+.category-tech {
     font-family: 'IBMPlexMono', monospace;
     font-weight: 200;
-    font-size: 15px;
-    color: #FEFEFE;
+    font-size: 1.1vw;
+    color: #000000;
     letter-spacing: 1.1px;
     margin-left: 100px;
     text-align: left;
@@ -55,11 +49,11 @@ nav {
 }
 
 
-.category-tech {
+.category-news {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 200;
-    font-size: 15px;
-    color: #000000;
+    font-size: 1.1vw;
+    color: #FEFEFE;
     letter-spacing: 1.1px;
     text-align: left;
     align-items: center;
@@ -82,8 +76,9 @@ nav {
 
 .content-holder {
     width: max-content;
-    height: 600px;
-    margin: 80px auto;
+    height: 40vw;
+    margin: 15vh auto;
+    align-self: center;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -95,36 +90,37 @@ nav {
 
 .magazine {
     height: auto;
-    margin: 0 35px;
+    margin: 0 3vw;
 }
 
 .name,
 .page,
 .magazine {
-    width: 240px;
-}
-
-.magazine.factmag {
-    margin-right: 200px;
+    width: 17vw;
 }
 
 .name {
     background-color: #FFBCBB;
-    height: 40px;
-    border-top-left-radius: 15px;
+    height: 5vh;
+    border-top-left-radius: 1em;
     display: flex;
-    border-top-right-radius: 15px;
+    border-top-right-radius: 1em;
 }
 
 .page {
     position: relative;
     background-color: #FFF8F5;
-    height: 320px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    height: 37vh;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
     overflow-y: auto;
 }
 
+.simplebar-scrollbar:before {
+    background-color: rgba(224, 178, 178, 0.781);
+    height: 3em;
+    box-shadow: 0 3px 6px 0 rgba(216,211,211,0.50);
+}
 
 .page,
 .name {
@@ -135,7 +131,7 @@ nav {
 h1.title {
     font-family: 'IBMPlexMono', monospace;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1vw;
     margin: auto;
     text-align: center;
     color: #FFFFFF;
@@ -149,11 +145,11 @@ li.news {
 h2 {
     font-family: 'IBMPlexMono', monospace;
     font-weight: 200;
-    font-size: 13px;
+    font-size: 0.85vw;
     color: #5B2D2D;
     letter-spacing: -0.5px;
     text-align: center;
-    margin-top: 17px;
+    margin-top: 1em;
 }
 
 .page  a:any-link {
@@ -166,35 +162,35 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 18px;
+    margin-top: 1em;
+    margin-bottom: 1em;
     align-items: center;
 }
 
 .meta > ul > li {
-    margin: 5px;
+    margin: 0.2em;
 }
 
 
 .date {
-    margin-left: 25px;
+    margin-left: 1em;
 }
 
 .description > p {
     font-family: 'IBMPlexMono', monospace;
     font-weight: 100;
-    font-size: 11px;
+    font-size: 0.72vw;
     color: #000000;
     letter-spacing: -0.67px;
     text-align: center;
-    margin: 4px 15px;
-    margin-top: 10px;
+    margin: 1em 1.5em;
+    margin-top: 1em;
 }
 
 .meta {
     font-family: 'IBMPlexMono', monospace;
     font-weight: 200;
-    font-size: 10px;
+    font-size: 0.6vw;
     color: #D97F7F;
     letter-spacing: -0.58px;
     text-align: center;
@@ -202,4 +198,276 @@ h2 {
     margin: auto;
 }
 
+.nav-mobile {
+    background-color: rgba(73, 56, 49, 0.712);
+    width: 40vw;
+    height: 15vw;
+    top: -9vh;
+    left: 30vw;
+    font-size: 4vw;
+    position: absolute;
+    z-index: 100;
+    font-family: monospace;
+    justify-items: center;
+    border-radius: 4vw;
+}
+
+li[title = 'mixmag'],
+li[title = 'resident-advisor'],
+li[title = 'pitchfork'] {
+    border-top: .2em solid white;
+}
+
+li[title ='pitchfork'] {
+    border-bottom: .2em solid white;
+}
+
+ul.mags {
+    display: flex;
+    flex-direction: column;
+}
+
+ul.mags > li {
+    text-align: center;
+    padding-top: 1vh;
+    list-style: none;
+    align-self: center;
+}
+
+/* li.FactMagazine {
+    border-top: none;
+} */
+
+
+.menu {
+    display: none;
+    position: relative;
+    flex-direction: row;
+    background-color: #FFE8E8;
+}
+
+.nada {
+    display: none;
+}
+
+@media screen and (max-width: 560px) {
+    .menu {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    i {
+        color: #FFBCBB;
+        z-index: 99;
+    }
+
+    .header,
+    .nav {
+        position: fixed;
+    }
+
+    h1.title {
+        font-size: 2.4vh;
+    }
+
+    h2 {
+        font-size: 1.5vh;
+    }
+
+    .description > p {
+        font-size: 1.3vh;
+    }
+
+    .meta {
+        font-size: 1.2vh;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .category-tech, 
+    .category-news {
+        font-size: 2vh;
+        margin-top: 0.5em;
+        color: black;
+    }
+
+
+    .catnews, 
+    .cattech {
+        align-items: center;
+        margin: auto;
+    }
+
+    .category-tech {
+        text-align: end;
+        margin-left: 0;
+    }
+
+    .content-holder {
+        flex-direction: column;
+        height: auto;
+        margin: auto;
+        margin-top: 3vh;
+        width: 80%;
+    }
+    
+    .categories {
+        width: 100%;
+        margin-top: 2vw;
+        margin: auto;
+    }
+
+    .catnews, 
+    .cattech {
+        align-items: center;
+        margin: auto;
+    }
+
+    .magazine, 
+    .page, 
+    .name {
+        width: 75vw;
+        margin: auto;
+    }
+
+    .page {
+        height: 75vh;
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    body {
+        background-image: none;
+        background-color: #FFE8E8;
+    }
+
+    .name {
+        background-color: inherit;
+        box-shadow: 4px 4px 0px 0px rgba(158, 148, 148, 0.068),
+        -4px -4px 4px 0 rgba(255,255,255,1)
+    }
+
+    .page {
+        box-shadow: 
+        4px 4px 0px 0px rgba(158, 148, 148, 0.068),
+    }
+
+    .nada {
+        display: none;
+    }
+
+    .block {
+        display: block;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    body {
+        background-image: linear-gradient(306deg, #FFE8E8 49%, rgba(0,0,0,0.81) 49%);
+        /* background-repeat: space; */
+        background-attachment: fixed;
+        z-index: -1;
+        position: relative;
+    }
+
+    .category-tech {
+        color: white;
+    }
+
+    .content-holder {
+        display: grid;
+        margin-top: 25vh;
+        grid-template-columns: 50% 50%;
+    }
+
+    .magazine,
+    .page,
+    .name {
+        width: 30vw;
+    }
+
+    .cattech,
+    .catnews {
+        margin: auto;
+        margin-right: 12vw;
+    }
+
+    .categories {
+        position: relative;
+        left: -1vw;
+    }
+
+    .page {
+        height: 30vh;
+    }
+    
+    .name {
+        height: 3vh;
+    }
+
+    .magazine {
+        margin-bottom: 5vh;
+    }
+
+    h1.title {
+        font-size: 2vw;
+    }
+
+    h2 {
+        font-size: 1.5vw;
+    }
+
+    .description > p {
+        font-size: 1.3vw;
+    }
+
+    .meta {
+        font-size: 1.1vw;
+    }
+}
+
+@media  screen 
+  and (max-width: 1200px) 
+  and (min-width: 560px)
+  {
+    .page,
+    .name,
+    .magazine {
+        width: 230px;
+    }
+
+    h2 {
+        font-size: 1.3vh;
+    }
+
+
+    .description > p {
+        font-size: 1.2vh;
+    }
+
+    h1.title {
+        font-size: 1.5vh;
+    }
+
+    .meta {
+        font-size: 1vh;
+    }
+
+}
 

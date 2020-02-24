@@ -159,16 +159,22 @@ getData("pitchfork").then(data => {
     data.forEach(dados => populatePitchfork(dados));
 }).catch(err => console.log(err))
 
+let res = window.matchMedia("(max-width: 560px)")
+
 window.addEventListener("resize", () => {
     console.log("being resized");
-    if (window.innerHeight > window.innerWidth) {
+    if (res.matches) {
         activateMobileUI();
     } else {
         landscapeUI();
     }     
 });
 
-if (window.innerHeight > window.innerWidth) {
+// if (window.innerHeight > window.innerWidth) {
+//     activateMobileUI();
+// }
+
+if (res.matches) {
     activateMobileUI();
 }
 
