@@ -25,5 +25,6 @@ urlpatterns = [
     path("mixmag/", include("mixmag.urls")),
     path("pitchfork/", include("pitchfork.urls")),
     path("residentadvisor/", include("residentadvisor.urls")),
-    path("", views.HomeView.as_view(), name="home")
+    path("", views.HomeView.as_view(), name="home"),
+    path("tech/", views.TechView.as_view(), name="tech")
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -4,138 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eTune - Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
         <header>
             <nav>
                 <div class="logo">
-                <img src="vinyl.svg" class="vinyl">
+                <img src="/media/vinyl.png" class="vinyl">
                 </div>
                 <div class="categories">
-                <a class="category-tech" href="#">Tech</a>
-                <a class="category-news" href="#">News</a>
+                <div class="catnews">
+                    <a class="category-tech" href="#">Tech</a>
+                </div>
+                <div class="cattech">
+                    <a class="category-news" href="{% url 'home' %}">News</a>
+                </div>
                 </div>
             </nav>
         </header>
         <div class="content-holder">
             <div class="magazine factmag">
                 <div class="name">
-                    <h1 class="title"></h1> 
+                    <h1 class="title">FactMagazine</h1> 
                 </div>
-                <div class="page">
+                <div class="page" data-simplebar>
                     <ul class="news-list">
-                        <li class="news">
-                            <article>
-                                <div class="headline">
-                                    <h2></h2>
-                                </div>
-                                <div class="description">
-                                    <p></p>
-                                </div>
-                                <div class="meta">
-                                    <ul>
-                                        <li><time> time </time> |</li>
-                                        <li class="tags">tags</li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="news">
-                            <article>
-                                <div class="headline">
-                                    <h2></h2>
-                                </div>
-                                <div class="description">
-                                    <p></p>
-                                </div>
-                                <div class="meta">
-                                    <ul>
-                                        <li><time> time </time> |</li>
-                                        <li class="tags">tags</li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="news">
-                            <article>
-                                <div class="headline">
-                                    <h2></h2>
-                                </div>
-                                <div class="description">
-                                    <p></p>
-                                </div>
-                                <div class="meta">
-                                    <ul>
-                                        <li><time> time </time> |</li>
-                                        <li class="tags">tags</li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </li>
                     </ul>
                 </div>
             </div>
             <div class="magazine mixmag">
                 <div class="name">
-                <h1 class="title"></h1> 
+                <h1 class="title">MixMag</h1> 
                 </div>
-                <div class="page">
+                <div class="page" data-simplebar>
                     <ul class="news-list">
-                        <li class="news">
-                            <article>
-                                <div class="headline">
-                                    <h2></h2>
-                                </div>
-                                <div class="description">
-                                    <p></p>
-                                </div>
-                                <div class="meta">
-                                    <ul>
-                                        <li><time> time </time> |</li>
-                                        <li class="tags">tags</li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="news">
-                            <article>
-                                <div class="headline">
-                                    <h2></h2>
-                                </div>
-                                <div class="description">
-                                    <p></p>
-                                </div>
-                                <div class="meta">
-                                    <ul>
-                                        <li><time> time </time> |</li>
-                                        <li class="tags">tags</li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="news">
-                            <article>
-                                <div class="headline">
-                                    <h2></h2>
-                                </div>
-                                <div class="description">
-                                    <p></p>
-                                </div>
-                                <div class="meta">
-                                    <ul>
-                                        <li><time> time </time> |</li>
-                                        <li class="tags">tags</li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </main>
 
-    <script src="{% static 'main.js' %}"></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="{% static 'tech.js' %}"></script>
 </body>
 </html>

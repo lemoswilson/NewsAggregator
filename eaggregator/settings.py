@@ -139,6 +139,6 @@ REST_FRAMEWORK = {
     # )
 }
 
-STATICFILES_DIRS = ['dist']
+STATICFILES_DIRS = ('dist', '/Users/lemoswilson/.pyenv/versions/3.6.5/envs/eagg-venv-3.6.5/lib/python3.6/site-packages/django/contrib/admin')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'

@@ -4,7 +4,9 @@ from rest_framework import viewsets, mixins
 from .models import MixMag_model
 
 class MixMag_news(mixins.RetrieveModelMixin, mixins.ListModelMixin, viewsets.GenericViewSet):
-    queryset = MixMag_model.objects.all().order_by("-date")
+    queryset = MixMag_model.objects.filter(category="news").order_by("-date")
     serializer_class = MixMagSerializer
-    filter_fields = ('category', )
-# Create your views here.
+
+class MixMag_tech(mixins.RetrieveModelMixin, mixins.ListModelMixin, viewsets.GenericViewSet):
+    queryset = MixMag_model.objects.filter(category="tech").order_by("-date")
+    serializer_class = MixMagSerializer

@@ -122,9 +122,10 @@ class MixMag:
             if not self.is_feature():
                 ul = self.page_soup().find("ul", {"class":"tags"})
                 tags_element = ul.find_all("li", {"class":"tags__tag"})
-                self.tags = [i.text for i in tags_element]
+                self.tags = [i.text for i in tags_element if "Home" not in i.text and "Tech" not in i.text and "News" not in i.text]
             else:
-                self.tags = self.page_soup().find("article")["data-tags"]
+                taglits = self.page_soup().find("article")["data-tags"].split(",")
+                self.tags = [i for i in taglits if "Home" not in i and "Tech" not in i and "News" not in i] 
             return self.tags
 
         def get_img_link(self):
@@ -196,6 +197,6 @@ class MixMag:
             self.get_text()
             return self
 
-        def to_json():
+        def to_json(self):
             return json.dumps(self.__dict__)
 
