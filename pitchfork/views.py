@@ -4,7 +4,7 @@ from .models import Pitchfork_model
 from .serializers import PitchforkSerializer
 
 class Pitchfork_news(mixins.RetrieveModelMixin, mixins.ListModelMixin, viewsets.GenericViewSet):
-    queryset = Pitchfork_model.objects.all().order_by("-date")
+    queryset = Pitchfork_model.objects.all().order_by("-date")[:15]
     serializer_class = PitchforkSerializer
 
 # Create your views here.

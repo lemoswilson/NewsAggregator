@@ -181,16 +181,23 @@ if (res.matches) {
 menu.addEventListener("click", e => {
     e.stopPropagation();
     if(navMobile.classList.contains('nada')) {
-        navMobile.classList.remove('nada')
+        navMobile.classList.remove('off');
+        navMobile.classList.add('animate');
+        navMobile.classList.remove('nada');
     } else {
-        navMobile.classList.add('nada');
+        navMobile.classList.remove('animate')
+        navMobile.classList.add('off');
+        setTimeout(() => navMobile.classList.add('nada'), 300);
     }
 });
 
 body.addEventListener("click", e => {
     e.stopPropagation();
     if(!navMobile.classList.contains('nada')) {
-        navMobile.classList.add('nada');
+        console.log('pressed');
+        navMobile.classList.remove('animate');
+        navMobile.classList.add('off');
+        setTimeout(() => navMobile.classList.add('nada'), 300);
     }
 });
 
