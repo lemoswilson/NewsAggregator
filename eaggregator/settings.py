@@ -127,9 +127,10 @@ USE_TZ = True
 
 # STATIC_URL = 'http://127.0.0.1:8080/'
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Celery
-BROKER_URL = 'redis://h:pd9efd4c21a2384899c539b351a67c23f3cf5d5f2f2ae2e31813f60608a57446b@ec2-18-233-27-70.compute-1.amazonaws.com:30839'
+BROKER_URL = 'redis://h:pe6cbd25a72c9510577f7107357bb5a12060e9780ec9c9ad2abf5f818c9ad9c81@ec2-34-236-66-135.compute-1.amazonaws.com:11799'
 BROKER_TRANSPORT = 'redis'
 CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
 
