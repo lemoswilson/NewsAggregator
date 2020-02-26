@@ -1,4 +1,4 @@
-import '../css/styles.css';
+// import '../css/styles.css';
 
 const residentAdvisor = document.querySelector(".resident-advisor");
 const mixmag = document.querySelector(".mixmag");

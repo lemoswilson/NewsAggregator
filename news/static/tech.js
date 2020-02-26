@@ -1,4 +1,4 @@
-import '../css/tech.css'
+// import '../css/tech.css'
 
 const mixmag = document.querySelector(".mixmag");
 const factmag = document.querySelector(".factmag");

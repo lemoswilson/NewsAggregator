@@ -125,7 +125,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = 'http://127.0.0.1:8080/'
+# STATIC_URL = 'http://127.0.0.1:8080/'
+STATIC_URL = '/static/'
 
 # Celery
 BROKER_URL = 'redis://localhost:6379'
@@ -139,6 +140,5 @@ REST_FRAMEWORK = {
     # )
 }
 
-STATICFILES_DIRS = ('dist', '/Users/lemoswilson/.pyenv/versions/3.6.5/envs/eagg-venv-3.6.5/lib/python3.6/site-packages/django/contrib/admin')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
