@@ -129,7 +129,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Celery
-BROKER_URL = 'redis://localhost:6379'
+BROKER_URL = 'redis://h:pd9efd4c21a2384899c539b351a67c23f3cf5d5f2f2ae2e31813f60608a57446b@ec2-18-233-27-70.compute-1.amazonaws.com:30839'
 BROKER_TRANSPORT = 'redis'
 CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
 
