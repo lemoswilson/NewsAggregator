@@ -3,6 +3,9 @@ from .models import FactMag_model
 from . import scrapper
 from datetime import datetime
 
+# just to comment
+#thrash
+
 @task() 
 def get_data_factmag(category, n_of_pages):
     # getting the highlight posts and check if they already exists i the database
