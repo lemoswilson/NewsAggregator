@@ -56,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'eaggregator.urls'
@@ -129,6 +130,10 @@ USE_TZ = True
 # STATIC_URL = 'http://127.0.0.1:8080/'
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Celery
 BROKER_URL = 'redis://h:pe6cbd25a72c9510577f7107357bb5a12060e9780ec9c9ad2abf5f818c9ad9c81@ec2-34-236-66-135.compute-1.amazonaws.com:11799'
