@@ -1,4 +1,5 @@
 # NewsAggregator
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/lemoswilson/NewsAggregator/blob/master/LICENSE) 
 
 ## About
 
